@@ -1,0 +1,337 @@
+ECOR 1041 Lab 0 Solution Template 
+
+Author and Student Number: Nicholas Garth 101227727
+
+This file is to be used in conjunction with the detailed lab description for Lab 0.
+Use this file to enter your answers to the series of exercises you will complete.
+
+=========================================================================================
+
+    Exploring Data Types and Operators
+
+=========================================================================================
+
+Exercise 1: A first interaction with the Python shell
+
+>>> 1+2
+
+Result (the value that was displayed): 3 
+
+===========
+Exercise 2: Experiment - Do spaces matter?
+
+>>> 1 + 2
+
+Result: 3
+
+>>> 1     +       2
+
+Result: 3
+
+
+Concluding question (Record your conclusion here): What do you conclude about the significance of spaces in expressions? Does the number of spaces between the operands 
+and operator affect the evaluation? 
+
+In the many tests done I have concluded that having spaces between the operands and operator do not affect the evaluation. All experiments have resulted with 3.
+
+MARKS (..../5)
+
+===========
+Exercise 3: Using the built-in function called type(), explore different data types.
+
+>>> type(6)
+
+Result: int
+
+>>> type(7)
+
+Result: int
+
+>>> type(0)
+
+Result: int
+
+>>> type(-1)
+
+Result: int
+
+>>> type(25)
+
+Result: int
+
+>>> type(-26)
+
+Result: int
+
+Concluding question: What type were all of these sample numbers?  
+
+Proven by the tests done these are all integers. An integer is any negative or positive whole number. 
+
+MARKS (..../5)
+===========
+Exercise 4: Explore arithmetic operations on integers (including negative integers).
+
+>>> 5 - 1
+
+Result: 4
+
+>>> 4 - 6
+
+Result: -2
+
+>>> 5 - -9
+
+Result: 14
+
+>>> -7 - -2
+
+Result: -5
+
+>>> 2 * 3
+
+Result: 6
+
+>>> 4 * -3
+
+Result: -12
+
+>>> -5 * -4
+
+Result: 20
+
+Concluding question: It appears that, for integer values, - is the subtraction operator and * is the multiplication operator. 
+What can you conclude about the types of the values produced by these operations?
+
+From the tests I've concluded that * is the multiplication operator, - is the subtraction operator and is what goes infront of a integer to make it negative. The values produced from the operations are values that you would expect when multiplying and subtracting whole numbers that are both positive and negative, positive and positive, and negative and negative. 
+
+MARKS (..../10)
+===========
+Exercise 5: Explore the arithmetic operation of division on integers
+
+>>> 6 / 2
+
+Result: 3.0
+
+>>> -6 / 2
+
+Result: -3.0
+
+>>> 6 / -2
+
+Result: -3.0
+
+>>> type(6 / -2)
+
+Result: <class 'float'>
+
+>>> 7 / 2
+
+Result: 3.5
+
+>>> type(7 / 2)
+
+Result: <class 'float'>
+
+>>> 10 / 3
+
+Result: 3.3333333333333335
+
+>>> type(10 / 3)
+
+Result: <class 'float'>
+
+Concluding Question: What is the type of the value produced when one integer is divided by another. 
+
+From the tests, dividing one integer by another will result in a float. This is due to the fact that dividing whole numbers by one another can sometimes result in getting fractions of numbers.
+
+MARKS (..../10)
+===========
+Exercise 6: Explore compound arithmetic operations.
+
+>>> 1 + 2 + 3
+
+Result: 6
+
+>>> 5 - 1 - 1 - 1
+
+Result: 2
+
+>>> 2 * 2 * 3
+
+Result: 12
+
+>>> 12 / 3 / 2
+
+Result: 2.0
+
+Concluding Question: Does Python support more complicated expressions made up of several operands
+and operators?
+
+In the tests done I have determined that python does support more complicated expressions made of several operands. 
+
+MARKS (..../10)
+===========
+Exercise 7: Explore operator precedence.
+
+>>> 1 + 2 * 4
+
+Result: 9
+
+>>> 2 * 4 + 1
+
+Result: 9
+
+Concluding Question: What do you conclude about the precedence of the * operator relative to the + operator?
+
+In the tests done it was concluded that the * operator takes precedence over the + operator. Python follows the rules of BEDMAS.
+
+MARKS (..../10)
+===========
+Exercise 8: Explore operator precedence further, with parentheses.
+
+>>> (1 + 2) * 4
+
+Result: 12
+
+>>> 2 * (4 + 1)
+
+Result: 10
+
+Compare these results to the ones you obtained in Exercise 7.
+
+Concluding Question: What do you conclude about the effect of parentheses on operator precedence?
+
+In the tests done it was determined the operands int the parentheses take precedence over any other operator. Python follows BEDMAS.
+
+MARKS (..../10)
+===========
+Exercise 9: This exercise is different.  Instead of exploring a question using a supplied list
+of shell commands as your experiment, you are going to design your own experiment
+to answer the question by yourself. In a way, you'll be writing your own first program independently!
+
+In mathematics, an expression involving multiplication can sometimes be written in two ways:
+       2 x (3 + 4)    where the x multiplication operator is EXPLICITLY used
+       2 (3 + 4)      where the x multiplication operator is IMPLICITLY assumed.
+  
+The question is: Does Python support "implicit multiplication"?
+
+You must design an experiment (a series of shell commands, as in other exercises) which prove
+the answer one way or the other.
+
+Record your experiment's shell commands here:
+
+>>> 2(3 + 4)
+
+Result: <stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        TypeError: 'int' object is not callable
+
+>>> 2 * (3 + 4)
+
+Result: 14
+
+>>> 6(8 * 6) / 4
+
+Result: <stdin>:1: SyntaxWarning: 'int' object is not callable; perhaps you missed a comma?
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        TypeError: 'int' object is not callable
+
+>>> 6 * (8 * 6) / 4
+
+Result: 72.0
+
+Record your conclusion here: Does Python support implicit multiplication?
+
+As seen in testing python does not support implicit multiplication meaning an operator is always needs to be explicitly used.
+
+MARKS (..../10)
+
+===========
+Exercise 10: Explore the Python's exponentiation operator **.
+   NOTE: For advanced students, do not use Python's pow() function. Not yet. 
+
+>>> 3 ** 2
+
+Result: 9
+
+>>> -3 ** 2
+
+Result: -9
+
+Concluding question: Explain *WHY* the results of the second shell command is NOT 
+the square of -3. Describe the order of operations performed by the computer.
+
+The result is not the square of -3 because it is taking the square of 3 and the multiplying it by -1.
+
+Concluding question: Write a shell command that correctly calculates the square of -3? 
+You must use the ** operator. You must NOT use the pow() function.
+
+>>> (-3) ** 2
+
+Result: 9
+
+MARKS (..../10)
+===========
+
+Exercise 11: More exploration of division in Python.  Exercise 5 introduced the / operator.
+In this exercise, you will use the // operator.
+
+>> 11 // 4
+
+Prediction: 2
+
+>> -11 // 4
+
+Prediction: -3
+
+>> 11 // -4
+
+Prediction: -3
+
+>> -11 // -4
+
+Prediction: 2
+
+Concluding Question: Explain the difference between the / operator and the // operator.
+In your explanation, include descriptions of what results are produced for different
+combinations of signs (positive/negative)
+
+In the test it was determined to return an integer value when dividing using python you can use the // operator which always rounds to the lower integer. Dividing a positive number by a negative number it'll round to the smaller number, so if you did the same operation with / and got a float of -2.75 the number you will get with the // operator will be -3. Dividing a negative number by a negative number it'll still round to the the smaller number, so if you did the same operation with / and got a float of 2.75 the number you will get with the // operator will be 2. If dividing a positive number by a positive number it'll still round to the smaller number. 
+
+MARKS (..../10)
+===========
+
+Exercise 12: Exploring the Modulus Operator
+ TIP: Exercise 11 and 12 go together.  The sequence of commands is identical,
+except for a change in the operator.  
+
+>> 11 % 4
+
+Prediction: 3
+
+>> -11 % 4
+
+Prediction: 1
+
+>> 11 % -4
+
+Prediction: -1
+
+>> -11 % -4
+
+Prediction: -3
+
+Concluding Question: Explain the behaviour of the modulus operator. What value does it return?
+In your explanation, include descriptions of what results are produced for different
+combinations of signs (positive/negative)
+
+In the tests I have determined that the modules operator returns the remainder of a division. When a negative sign is used it changes the remainder of the division because when you go to calculate the remainder manually you first divide the 2 values and then multiply what you get by the divisor and then subtract that value from the divedend. In this process of finding the remainder one negative value can cause the result to be quite different then if there were no negatives or the other number had the negative.
+
+MARKS (..../10)
+=========================================================================================
+
+
+Last edited: August 9, 2021
+
