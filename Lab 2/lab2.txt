@@ -40,6 +40,7 @@ It is the first thing that shows up in the diagram named Global frame
 What is the name of the frame containing degrees_c?  
 Global frame
 When does variable degrees_f appear in the diagram?
+
 It is the last thing that shows up in the diagram named Global frame
 ===========
 
@@ -66,7 +67,9 @@ Observe the memory diagram as the code is executed, step-by-step. Verify that yo
 produces a result of 8.83 litres per 100 km.
 
 When do the variables appear in the diagram?
+
 The variables appear on the Global frame diagram when the variable is created
+
 What are the types and values of the objects?
 
 mpg has a integer value of 32
