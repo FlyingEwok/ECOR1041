@@ -1,6 +1,7 @@
 #Nicholas Garth 101227727
 import math 
  
+# Define Functions
 def area_of_disk(radius): 
     return math.pi * radius ** 2 
  
@@ -27,7 +28,6 @@ def area_of_cone(height, radius):
     return (math.pi * pow(radius, 2)) + (math.pi * radius) * math.sqrt(pow(radius, 2) + pow(height, 2))
 
 # Main Script
-
 # Exercise 1
 
 # Print Exercise 1 in terminal to seperate from other exercise
