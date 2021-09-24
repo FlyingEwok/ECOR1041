@@ -1,5 +1,6 @@
-x = 8
-y = 3
-
-
-print(pow(x,y))
+print ("Please enter the \"opposite\" value for the tangent")
+opposite = input()
+print ("Please enter the \"adjacent\" value for the tangent")
+adjacent = input()
+    tangent = opposite / adjacent
+    print ("The tangent is ", tangent)
