@@ -184,5 +184,5 @@ result = replicate('a', 'b')
 print(result)
 result = replicate('ab', 'c')
 print(result)
-result = replicate('abdcefg', 'hijk ') # The space counts as a charachter
+result = replicate('abdcefg', 'hijk ') # The space counts as a character
 print(result)
