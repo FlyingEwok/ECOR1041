@@ -2,7 +2,7 @@
 import math
 
 # Define Functions
-# Exercise 1 Fuction
+# Exercise 1 Function
 def area_cylinder(radius: float, height: float) -> float:
     '''Calculates the area of a cylinder given the radius and height'''
     return (2 * math.pi * height) + (2 * math.pi * pow(radius, 2))
