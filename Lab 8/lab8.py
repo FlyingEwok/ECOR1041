@@ -100,4 +100,5 @@ print("The decending order of the integers you entered is: ", sortIntegers(int(i
 # Exercise 5
 print("\nExercise 5 has begun: ") # Print Exercise has begun
 
+# Prints the unique sum
 print("The unique sum is: ", unique_sum(int(input("Enter a integer: ")), int(input("Enter another integer: ")), int(input("Enter another integer: "))))
