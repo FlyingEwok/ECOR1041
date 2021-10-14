@@ -17,10 +17,7 @@ def ticket_price(age: int, weekend: bool) -> float:
         return baseTicketPrice
 def weekend(day: str) -> bool:
     """Returns boolean if its the weekend given the day of the week"""
-    if day == "Saturday" or day == "saturday" or day == "Sunday" or day == "sunday":
-        return True
-    else:
-        return False # This seems to be needed in order to return False, without this here it returns None
+    return day == "Saturday" or day == "saturday" or day == "Sunday" or day == "sunday"
 
 # Exercise 2 function
 def suggested_activity(temp: int) -> str:
@@ -42,10 +39,8 @@ def great_42(a: int, b: int) -> bool:
     sum = a+b
     difference = a-b
 
-    if a == 42 or b == 42 or sum == 42 or difference == 42:
-        return True
-    else:
-        return False # This seems to be needed in order to return False, without this here it returns None
+    return a == 42 or b == 42 or sum == 42 or difference == 42
+
 
 # Exercise 4 function
 def sortIntegers(a: int, b: int, c: int) -> list:
